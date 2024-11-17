@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>انتخاب محل</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="modal">
+                <!-- هدر فرم -->
+                <div class="modal-header">
+                    <h2>انتخاب محل</h2>
+                    <span class="clear-text">حذف همه</span>
+                </div>
+
+                <!-- Dropdown انتخاب شهر -->
+                <div class="form-group select-container">
+                    <label for="city" class="select-label">شهر محل آگهی</label>
+                    <select id="city" class="select-input">
+                        <!-- <option value="" disabled selected>انتخاب کنید</option> -->
+                        <option value="تهران">تهران</option>
+                        <option value="مشهد">مشهد</option>
+                        <option value="اصفهان">اصفهان</option>
+                        <option value="شیراز">شیراز</option>
+                    </select>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- Search Box -->
+                <div class="form-group search-container">
+                    <input type="text" id="search" placeholder="جستجو در محله‌ها..." />
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 18a8 8 0 100-16 8 8 0 000 16zM21 21l-4.35-4.35" />
+                    </svg>
+                </div>
+
+                <div id="selected-label" class="selected-label"></div>
+
+                <!-- Checkboxها -->
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="alert" class="custom-checkbox" />
+                        <label for="alert" class="checkbox-label">
+                            آبشار
+                            <span class="checkbox-address">هفده شهریور،ری،خیابان آبشار،کوچه محلاتی</span>
+                        </label>
+                    </div>
+
+                    <div class="divider custom-divider"></div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="publishAd" class="custom-checkbox" />
+                        <label for="publishAd" class="checkbox-label">
+                            آبشار تهران
+                            <span class="checkbox-address">امید دایان,خیابان نمونه</span>
+                        </label>
+                    </div>
+
+                    <div class="divider custom-divider"></div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="coWorker" class="custom-checkbox" />
+                        <label for="coWorker" class="checkbox-label">
+                            آجودانیه
+                            <span class="checkbox-address">منطقه1,کاشانک,داراباد</span>
+                        </label>
+                    </div>
+
+                    <div class="divider custom-divider"></div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="recruiter" class="custom-checkbox" />
+                        <label for="recruiter" class="checkbox-label">
+                            آذربایجان
+                            <span class="checkbox-address">گلهر,آذربایجان,رودکی,آزادی</span>
+                        </label>
+                    </div>
+
+                    <div class="divider custom-divider"></div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="other" class="custom-checkbox" />
+                        <label for="other" class="checkbox-label">
+                            آذری
+                            <span class="checkbox-address">حکیم,همت,امام زاده حسن</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- دکمه‌ها -->
+                <div class="button-group">
+                    <button id="cancel">انصراف</button>
+                    <button id="confirm">تأیید</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
